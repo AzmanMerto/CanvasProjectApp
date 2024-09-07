@@ -8,17 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		C325971F2C8BEBB600D9F7D5 /* CanvasProjectAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C325971E2C8BEBB600D9F7D5 /* CanvasProjectAppApp.swift */; };
-		C32597212C8BEBB600D9F7D5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32597202C8BEBB600D9F7D5 /* ContentView.swift */; };
 		C32597232C8BEBB800D9F7D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32597222C8BEBB800D9F7D5 /* Assets.xcassets */; };
 		C32597262C8BEBB800D9F7D5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C32597252C8BEBB800D9F7D5 /* Preview Assets.xcassets */; };
+		C325974E2C8BECC800D9F7D5 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C325974D2C8BECC800D9F7D5 /* CanvasView.swift */; };
+		C32597502C8BECD200D9F7D5 /* CanvasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C325974F2C8BECD200D9F7D5 /* CanvasViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C325971B2C8BEBB600D9F7D5 /* CanvasProjectApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CanvasProjectApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C325971E2C8BEBB600D9F7D5 /* CanvasProjectAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasProjectAppApp.swift; sourceTree = "<group>"; };
-		C32597202C8BEBB600D9F7D5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C32597222C8BEBB800D9F7D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C32597252C8BEBB800D9F7D5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C325974D2C8BECC800D9F7D5 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		C325974F2C8BECD200D9F7D5 /* CanvasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,12 @@
 		C325971D2C8BEBB600D9F7D5 /* CanvasProjectApp */ = {
 			isa = PBXGroup;
 			children = (
-				C325971E2C8BEBB600D9F7D5 /* CanvasProjectAppApp.swift */,
-				C32597202C8BEBB600D9F7D5 /* ContentView.swift */,
-				C32597222C8BEBB800D9F7D5 /* Assets.xcassets */,
+				C325974B2C8BEC7A00D9F7D5 /* App */,
+				C32597532C8BED1900D9F7D5 /* Extension */,
+				C32597482C8BEC6000D9F7D5 /* MVVM */,
+				C32597542C8BED4300D9F7D5 /* Server */,
+				C325974A2C8BEC7200D9F7D5 /* Helper */,
+				C32597492C8BEC6800D9F7D5 /* Resource */,
 				C32597242C8BEBB800D9F7D5 /* Preview Content */,
 			);
 			path = CanvasProjectApp;
@@ -65,6 +70,76 @@
 				C32597252C8BEBB800D9F7D5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C32597482C8BEC6000D9F7D5 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				C32597522C8BECF500D9F7D5 /* View&ViewModel */,
+				C32597512C8BECDA00D9F7D5 /* Model */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		C32597492C8BEC6800D9F7D5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C32597222C8BEBB800D9F7D5 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		C325974A2C8BEC7200D9F7D5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		C325974B2C8BEC7A00D9F7D5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C325971E2C8BEBB600D9F7D5 /* CanvasProjectAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C325974C2C8BECA100D9F7D5 /* canvas */ = {
+			isa = PBXGroup;
+			children = (
+				C325974D2C8BECC800D9F7D5 /* CanvasView.swift */,
+				C325974F2C8BECD200D9F7D5 /* CanvasViewModel.swift */,
+			);
+			path = canvas;
+			sourceTree = "<group>";
+		};
+		C32597512C8BECDA00D9F7D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C32597522C8BECF500D9F7D5 /* View&ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C325974C2C8BECA100D9F7D5 /* canvas */,
+			);
+			path = "View&ViewModel";
+			sourceTree = "<group>";
+		};
+		C32597532C8BED1900D9F7D5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		C32597542C8BED4300D9F7D5 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +212,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C32597212C8BEBB600D9F7D5 /* ContentView.swift in Sources */,
+				C32597502C8BECD200D9F7D5 /* CanvasViewModel.swift in Sources */,
 				C325971F2C8BEBB600D9F7D5 /* CanvasProjectAppApp.swift in Sources */,
+				C325974E2C8BECC800D9F7D5 /* CanvasView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

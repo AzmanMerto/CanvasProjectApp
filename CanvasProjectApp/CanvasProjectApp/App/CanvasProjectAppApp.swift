@@ -11,7 +11,7 @@ import SwiftUI
 struct CanvasProjectAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CanvasView()
         }
     }
 }
