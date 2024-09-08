@@ -11,10 +11,10 @@ struct ColorHelper {
     
     @frozen enum mainColor: String {
         case backgroundColor = "#283618"
+        case altBackground = "#606c38"
         case textColor = "#fefae0"
-        case c = "#606c38"
         case buttonColor = "#bc6c25"
-        case d = "#dda15e"
+        case lineColor = "#dda15e"
     }
     
 }

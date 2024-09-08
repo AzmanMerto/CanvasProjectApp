@@ -26,6 +26,8 @@
 		C32597752C8C35E800D9F7D5 /* PexelsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32597742C8C35E800D9F7D5 /* PexelsModel.swift */; };
 		C32597772C8C366300D9F7D5 /* SecretKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32597762C8C366300D9F7D5 /* SecretKeys.swift */; };
 		C325977B2C8CA09F00D9F7D5 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C325977A2C8CA09F00D9F7D5 /* Constant.swift */; };
+		C3BF4F892C8DE2F70085236B /* CanvasItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF4F882C8DE2F70085236B /* CanvasItemView.swift */; };
+		C3BF4F8C2C8DFDE50085236B /* AlignmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BF4F8B2C8DFDE50085236B /* AlignmentType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,8 @@
 		C32597742C8C35E800D9F7D5 /* PexelsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsModel.swift; sourceTree = "<group>"; };
 		C32597762C8C366300D9F7D5 /* SecretKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretKeys.swift; sourceTree = "<group>"; };
 		C325977A2C8CA09F00D9F7D5 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		C3BF4F882C8DE2F70085236B /* CanvasItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasItemView.swift; sourceTree = "<group>"; };
+		C3BF4F8B2C8DFDE50085236B /* AlignmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,7 @@
 				C325975B2C8BF1D800D9F7D5 /* Instruemnts */,
 				C32597552C8BEFA200D9F7D5 /* view */,
 				C325976A2C8C290900D9F7D5 /* Modifier */,
+				C3BF4F8A2C8DFDD80085236B /* type */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -192,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				C32597572C8BEFC100D9F7D5 /* CanvasItemShowcaseView.swift */,
+				C3BF4F882C8DE2F70085236B /* CanvasItemView.swift */,
 			);
 			path = canvas;
 			sourceTree = "<group>";
@@ -238,6 +244,14 @@
 				C32597702C8C2EDF00D9F7D5 /* FontHelper.swift */,
 			);
 			path = font;
+			sourceTree = "<group>";
+		};
+		C3BF4F8A2C8DFDD80085236B /* type */ = {
+			isa = PBXGroup;
+			children = (
+				C3BF4F8B2C8DFDE50085236B /* AlignmentType.swift */,
+			);
+			path = type;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +336,8 @@
 				C325975E2C8BF1FF00D9F7D5 /* ColorHelper.swift in Sources */,
 				C325971F2C8BEBB600D9F7D5 /* CanvasProjectAppApp.swift in Sources */,
 				C32597752C8C35E800D9F7D5 /* PexelsModel.swift in Sources */,
+				C3BF4F8C2C8DFDE50085236B /* AlignmentType.swift in Sources */,
+				C3BF4F892C8DE2F70085236B /* CanvasItemView.swift in Sources */,
 				C325975A2C8BF11D00D9F7D5 /* CanvasItemModel.swift in Sources */,
 				C32597712C8C2EDF00D9F7D5 /* FontHelper.swift in Sources */,
 				C32597772C8C366300D9F7D5 /* SecretKeys.swift in Sources */,

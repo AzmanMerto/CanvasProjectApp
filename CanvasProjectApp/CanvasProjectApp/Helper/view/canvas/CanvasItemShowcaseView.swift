@@ -53,13 +53,15 @@ private extension CanvasItemShowcaseView {
             ForEach(models.indices, id: \.self) { index in
                 let model = models[index]
                 
-                makeItemImageView(model)
-                    .frame(width: dw(model.size.width), height: dh(model.size.height))
-                    .onAppear {
-                        if index == models.count - 1 {
-                            loadMoreAction()
+                if !selectedItems.contains(where: { $0.id == model.id }) {
+                    makeItemImageView(model)
+                        .frame(width: dw(model.size.width), height: dh(model.size.height))
+                        .onAppear {
+                            if index == models.count - 1 {
+                                loadMoreAction()
+                            }
                         }
-                    }
+                }
             }
         }
         .animation(.easeIn, value: models.count)
